@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #bdd1e5;
+    padding: 0.5rem 1rem;
+
+    .nav-links {
+        display: flex;
+        list-style-type: none;
+        padding-inline-start: 0;
+        margin: 0;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            background-color: #94b6d9;
+            color: white;
+            padding: 20px;
+            border-radius: 35px;
+            text-decoration: none;
+
+            &:hover {
+                background-color: #7aaed8;
+            }
+        }
+    }
+}
+
+.hero {
+    background-image: url(./img/hero.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            margin: 0;
+        }
+
+        button {
+            background-color: #94b6d9;
+            color: white;
+            padding: 20px;
+            border-radius: 35px;
+            text-decoration: none;
+            border: 0;
+            
+            &:hover {
+                background-color: #7aaed8;
+            }
+        }
+    }
+}
+
+.accesos-directos {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: -50px;
+
+    .acceso {
+        background: gray;
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 30px;
+        background-color: #94b6d9;
+        gap: 15px;
+        
+        .acceso-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 70%;
+            gap: 10px;
+        }
+
+        h3, p {
+            margin: 0;
+            color: white;
+        }
+    }
+}
