@@ -20,9 +20,9 @@
     <main>
         <div class="hero">
             <div class="hero-content">
-                <h1>Bienvenidos a Clínica Aurora</h1>
+                <h1 id="titulo" class="titulo">Bienvenidos a Clínica Aurora</h1>
                 <p>La mejor atención para tu salud</p>
-                <button class="btn">Agendar Hora</button>
+                <button class="btn" onclick="cambiarTitulo()">Agendar Hora</button>
             </div>
         </div>
 
@@ -50,6 +50,17 @@
             </div>
         </div>
     </main>
+
+    <div style="display: none;" id="mensajeExito">
+        te has registrado
+    </div>
+
+    <form method="get" id="formulario" action="exito.html" onsubmit="validarFormulario(event)">
+        <input maxlength="10" type="text" name="nombre" id="nombre" onblur="validarFormulario(event)"/>
+        <span id="mensajeErrorNombre">El nombre es requerido</span>
+
+        <button type="submit">Enviar</button>
+    </form>
 
     <script src="assets/main.js"></script>
 </body>
